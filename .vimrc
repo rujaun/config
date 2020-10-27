@@ -1,7 +1,14 @@
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
+call plug#begin('~/.vim/plugged')
+
+Plug 'preservim/nerdtree'
+
+" Initialize plugin system
+call plug#end()
+
+let loaded_netrwPlugin = 1
 
 map <C-n> :NERDTreeToggle<CR>
+
 
 syntax on
 set tabstop=2
@@ -11,4 +18,3 @@ set ai
 set number
 set hlsearch
 set ruler
- 
