@@ -1,14 +1,15 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'preservim/nerdtree'
+Plug 'vim-scripts/indentpython'
 
-" Initialize plugin system
 call plug#end()
 
 let loaded_netrwPlugin = 1
 
 map <C-n> :NERDTreeToggle<CR>
 
+let NERDTreeIgnore=['\.pyc$', '\~$'] "hide .pyc files in nerdtree
 
 syntax on
 set tabstop=2
@@ -18,3 +19,4 @@ set ai
 set number
 set hlsearch
 set ruler
+set encoding=utf-8
