@@ -16,6 +16,8 @@ let NERDTreeIgnore=['\.pyc$', '\~$'] "hide .pyc files in nerdtree
 let g:airline_powerline_fonts = 1
 let g:airline_theme='one'
 
+set termguicolors
+
 colorscheme one
 set background=dark
 
