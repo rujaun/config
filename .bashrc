@@ -6,9 +6,11 @@
 [[ $- != *i* ]] && return
 
 EDITOR=vim
+COLORTERM=truecolor
 
 alias ls='ls --color=auto'
 export PS1='\u@\h:\[\e[33m\]\w\[\e[0m\]\$ '
 
+alias rbm='kbuildsycoca5'
 alias pythonv='python -m venv env'
 alias pythonva='source env/bin/activate'
