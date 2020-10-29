@@ -65,7 +65,7 @@ if [ "$FONTS" = "Y" ]; then
 	sudo cp ./.local.conf /etc/fonts/.local.conf
 fi
 
-echo -e "\nInstall OpenSSH and add SSH key to ssh-agent?"
+echo -e "\nInstall OpenSSH and add SSH key to ssh-agent? (Y/N): "
 
 read SSHKEY
 
@@ -87,7 +87,7 @@ if [ "$SSHKEY" = "Y" ]; then
 	fi
 fi
 
-echo -e "\nInstall credential manager for SSH key passphrases?"
+echo -e "\nInstall credential manager for SSH key passphrases? (Y/N): "
 
 read SSHCRED
 
