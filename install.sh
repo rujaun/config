@@ -15,8 +15,19 @@ echo -e "\nInstall .vimrc? (Y/N): "
 read VIMRC
 
 if [ "$VIMRC" = "Y" ]; then
-	rm ~/.vimrc
-	cp ./.vimrc ~/.vimrc
+
+	echo -e "\nChecking if .vimrc exists..."
+
+	FILE=~/.vimrc
+	if [[ -f "$FILE" ]]; then
+		echo -e "\n$FILE exists."
+
+		rm ~/.vimrc
+		cp ./.vimrc ~/.vimrc
+	else
+		rm ~/.vimrc
+		cp ./.vimrc ~/.vimrc
+	fi
 fi
 
 echo -e "\nConfigure git for first time setup? (Y/N): "
