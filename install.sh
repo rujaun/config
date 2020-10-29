@@ -49,7 +49,7 @@ if [ "$FONTS" = "Y" ]; then
 
 	echo -e "\nChecking if WinFonts exists..."
 
-	FILE=../WinFonts
+	FILE=./WinFonts
 	if [[ -d "$FILE" ]]; then
 		echo -e "\n$FILE exists."
 	else
