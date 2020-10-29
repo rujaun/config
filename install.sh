@@ -62,12 +62,12 @@ if [ "$FONTS" = "Y" ]; then
 	sudo cp ./WinFonts/* /usr/share/fonts/WinFonts/
 	sudo chmod 644 /usr/share/fonts/WinFonts/*
 	fc-cache --force
-	sudo cp ./local.conf /etc/fonts/local.conf
+	sudo cp ./.local.conf /etc/fonts/.local.conf
 fi
 
 echo -e "\nInstall OpenSSH and add SSH key to ssh-agent?"
 
-READ SSHKEY
+read SSHKEY
 
 if [ "$SSHKEY" = "Y" ]; then
 	echo -e "\nChecking if ssh key exists..."
@@ -89,7 +89,7 @@ fi
 
 echo -e "\nInstall credential manager for SSH key passphrases?"
 
-READ SSHCRED
+read SSHCRED
 
 if [ "$SSHCRED" = "Y" ]; then
 	echo -e "\nCopying ssh-agent.sh"
