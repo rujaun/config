@@ -38,6 +38,7 @@ if [ "$GIT" = "Y" ]; then
 	echo -e "\nSetting up git..."
 	git config --global user.name "Rujaun Fourie"
 	git config --global user.email rujaun@gmail.com
+	git config --global pull.rebase false
 fi
 
 
@@ -92,6 +93,8 @@ echo -e "\nInstall credential manager for SSH key passphrases?"
 read SSHCRED
 
 if [ "$SSHCRED" = "Y" ]; then
+	mkdir -p ~/.config/plasma-workspace/env/
+	
 	echo -e "\nCopying ssh-agent.sh"
 	cp ./ssh-agent.sh ~/.config/plasma-workspace/env/ssh-agent.sh
 	chmod u+x ~/.config/plasma-workspace/env/ssh-agent.sh
