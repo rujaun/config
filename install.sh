@@ -25,7 +25,6 @@ if [ "$VIMRC" = "Y" ]; then
 		rm ~/.vimrc
 		cp ./.vimrc ~/.vimrc
 	else
-		rm ~/.vimrc
 		cp ./.vimrc ~/.vimrc
 	fi
 fi
