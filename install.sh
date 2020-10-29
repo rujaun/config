@@ -19,6 +19,16 @@ if [ "$VIMRC" = "Y" ]; then
 	cp ./.vimrc ~/.vimrc
 fi
 
+echo -e "\nConfigure git for first time setup? (Y/N): "
+
+read GIT
+
+if [ "$GIT" = "Y" ]; then
+	echo -e "\nSetting up git..."
+	git config --global user.name "Rujaun Fourie"
+	git config --global user.email rujaun@gmail.com
+fi
+
 
 echo -e "\nInstall Windows Fonts? (Y/N): "
 
