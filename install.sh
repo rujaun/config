@@ -5,6 +5,9 @@ rm ~/.bashrc
 cp ./.bashrc ~/.bashrc
 source ~/.bashrc
 
+rm ~/.profile
+cp ./.profile ~/.profile
+
 # Vimrc
 rm ~/.vimrc
 cp ./.vimrc ~/.vimrc
