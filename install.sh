@@ -16,3 +16,7 @@ git config --global pull.rebase false
 
 # Font config
 sudo cp ./.local.conf /etc/fonts/.local.conf
+
+# Tmux
+rm ~/.tmux.conf
+cp ./.tmux.conf ~/.tmux.conf
