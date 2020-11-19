@@ -17,6 +17,8 @@ export PS1='\u@\h:\[\e[33m\]\w\[\e[0m\]\$ '
 
 alias pythonv='python -m venv env'
 alias pythonva='source env/bin/activate'
+alias python='python3'
+alias pip='pip3'
 
 export PY_USER_BIN=$(python3 -c 'import site; print(site.USER_BASE + "/bin")')
 export PATH=$PY_USER_BIN:$PATH
