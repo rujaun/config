@@ -125,6 +125,8 @@ alias python='python3'
 alias pip='pip3'
 alias pipclean='pip freeze | xargs pip uninstall -y'
 alias pipfreeze='pip freeze > requirements.txt'
+alias dockerstart='sudo systemctl start docker.service'
+alias dockerstop='sudo systemctl stop docker.service'
 
 export PY_USER_BIN=$(python3 -c 'import site; print(site.USER_BASE + "/bin")')
 export PATH=$PY_USER_BIN:$PATH
